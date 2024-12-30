@@ -5,6 +5,6 @@ This repository contains database dump files for MySQL and PostgreSQL. These fil
 
 ## Files
 
-- [MySQL Dump File](./mysql_dump.sql)
-- [PostgreSQL Dump File](./postgres_dump.sql)
+- [MySQL Dump File](./dumpMysql.txt)
+- [PostgreSQL Dump File](./dumpPostgres.txt)
 
