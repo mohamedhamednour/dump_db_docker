@@ -1,0 +1,11 @@
+# Create PostgreSQL dump
+pg_dump -U postgres -d mydatabase > /home/user/mydatabase_dump.sql
+
+# Copy dump file to Docker container
+docker cp /home/user/mydatabase_dump.sql my_container:/tmp/mydatabase_dump.sql
+
+# Access the Docker container
+docker exec -it my_container bash
+
+# Restore the dump inside the container
+pg_dump -U postgres -d mydatabase < /tmp/mydatabase_dump.sql
